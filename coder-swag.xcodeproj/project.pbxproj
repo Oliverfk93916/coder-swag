@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE033752218406650058B90A /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE033751218406650058B90A /* DataServices.swift */; };
 		CEEC60112182006600C1B091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC60102182006600C1B091 /* AppDelegate.swift */; };
-		CEEC60132182006600C1B091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC60122182006600C1B091 /* ViewController.swift */; };
+		CEEC60132182006600C1B091 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC60122182006600C1B091 /* CategoriesVC.swift */; };
 		CEEC60162182006600C1B091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC60142182006600C1B091 /* Main.storyboard */; };
 		CEEC60182182006A00C1B091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEC60172182006A00C1B091 /* Assets.xcassets */; };
 		CEEC601B2182006A00C1B091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC60192182006A00C1B091 /* LaunchScreen.storyboard */; };
+		CEEC60262182BC5100C1B091 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC60252182BC5100C1B091 /* CategoryCell.swift */; };
+		CEEC60282183F33100C1B091 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC60272183F33100C1B091 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE033751218406650058B90A /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		CEEC600D2182006600C1B091 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC60102182006600C1B091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEEC60122182006600C1B091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEEC60122182006600C1B091 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		CEEC60152182006600C1B091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEEC60172182006A00C1B091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEC601A2182006A00C1B091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEEC601C2182006A00C1B091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEC60252182BC5100C1B091 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		CEEC60272183F33100C1B091 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE033750218406530058B90A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE033751218406650058B90A /* DataServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CEEC60042182006600C1B091 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +68,41 @@
 		CEEC600F2182006600C1B091 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				CE033750218406530058B90A /* Services */,
+				CEEC60242182BBEE00C1B091 /* View */,
+				CEEC60232182BBE800C1B091 /* Controller */,
+				CEEC60222182BBE300C1B091 /* Model */,
 				CEEC60102182006600C1B091 /* AppDelegate.swift */,
-				CEEC60122182006600C1B091 /* ViewController.swift */,
 				CEEC60142182006600C1B091 /* Main.storyboard */,
 				CEEC60172182006A00C1B091 /* Assets.xcassets */,
 				CEEC60192182006A00C1B091 /* LaunchScreen.storyboard */,
 				CEEC601C2182006A00C1B091 /* Info.plist */,
 			);
 			path = "coder-swag";
+			sourceTree = "<group>";
+		};
+		CEEC60222182BBE300C1B091 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC60272183F33100C1B091 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEEC60232182BBE800C1B091 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC60122182006600C1B091 /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEEC60242182BBEE00C1B091 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC60252182BC5100C1B091 /* CategoryCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEC60132182006600C1B091 /* ViewController.swift in Sources */,
+				CE033752218406650058B90A /* DataServices.swift in Sources */,
+				CEEC60132182006600C1B091 /* CategoriesVC.swift in Sources */,
+				CEEC60262182BC5100C1B091 /* CategoryCell.swift in Sources */,
 				CEEC60112182006600C1B091 /* AppDelegate.swift in Sources */,
+				CEEC60282183F33100C1B091 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
