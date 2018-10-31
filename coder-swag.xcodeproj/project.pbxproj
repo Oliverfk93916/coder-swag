@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE033752218406650058B90A /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE033751218406650058B90A /* DataServices.swift */; };
+		CE84CEBF218A29A20032CD88 /* Product Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE84CEBE218A29A20032CD88 /* Product Cell.swift */; };
 		CEEC60112182006600C1B091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC60102182006600C1B091 /* AppDelegate.swift */; };
 		CEEC60132182006600C1B091 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC60122182006600C1B091 /* CategoriesVC.swift */; };
 		CEEC60162182006600C1B091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC60142182006600C1B091 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		CE033751218406650058B90A /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		CE84CEBE218A29A20032CD88 /* Product Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product Cell.swift"; sourceTree = "<group>"; };
 		CEEC600D2182006600C1B091 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC60102182006600C1B091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEC60122182006600C1B091 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEC60252182BC5100C1B091 /* CategoryCell.swift */,
+				CE84CEBE218A29A20032CD88 /* Product Cell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE84CEBF218A29A20032CD88 /* Product Cell.swift in Sources */,
 				CE033752218406650058B90A /* DataServices.swift in Sources */,
 				CEEC60132182006600C1B091 /* CategoriesVC.swift in Sources */,
 				CEEC60262182BC5100C1B091 /* CategoryCell.swift in Sources */,
